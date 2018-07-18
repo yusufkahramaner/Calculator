@@ -11,12 +11,12 @@
         android:layout_width="227dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,10 +24,10 @@
         android:id="@+id/ikinciSayi"
         android:layout_width="227dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/topla"
         app:layout_constraintEnd_toEndOf="@+id/ilkSayi"
         app:layout_constraintStart_toStartOf="@+id/ilkSayi"
         app:layout_constraintTop_toBottomOf="@+id/ilkSayi" />
@@ -35,20 +35,18 @@
     <Button
         android:id="@+id/bol"
         android:layout_width="51dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_marginStart="6dp"
         android:onClick="bol"
         android:text="/"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/ikinciSayi"
-        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toEndOf="@+id/carp"
         app:layout_constraintTop_toTopOf="@+id/carp" />
 
     <Button
         android:id="@+id/carp"
         android:layout_width="51dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_marginStart="6dp"
         android:onClick="carp"
         android:text="*"
@@ -59,7 +57,7 @@
     <Button
         android:id="@+id/cikar"
         android:layout_width="51dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_marginStart="6dp"
         android:onClick="cikar"
         android:text="-"
@@ -70,14 +68,13 @@
     <Button
         android:id="@+id/topla"
         android:layout_width="51dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="332dp"
         android:onClick="topla"
         android:text="+"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/ikinciSayi"
-        app:layout_constraintTop_toBottomOf="@+id/ikinciSayi" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ilkSayi" />
 
     <TextView
         android:id="@+id/sonuc"
@@ -94,14 +91,14 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="223dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="424dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:onClick="temizle"
         android:text="Temizle"
         app:layout_constraintEnd_toEndOf="@+id/bol"
-        app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="@+id/topla"
+        app:layout_constraintStart_toStartOf="@+id/ikinciSayi"
         app:layout_constraintTop_toBottomOf="@+id/cikar" />
 
 </android.support.constraint.ConstraintLayout>
